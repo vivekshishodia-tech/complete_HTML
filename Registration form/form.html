@@ -1,0 +1,190 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+</head>
+
+<body>
+
+    <h1>College Registration Form</h1>
+    <p>Please fill in the details carefully.</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" name="father" required>
+            <br><br>
+
+            <label for="mother">Mother's Name:</label>
+            <input type="text" id="mother" name="mother" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            Gender:
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="photo">Upload Photograph:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com" required>
+            <br><br>
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}" maxlength="10"
+                   placeholder="10-digit number" required>
+            <br><br>
+
+            <label for="address">Full Address:</label>
+            <textarea id="address" name="address"
+                      rows="4" cols="30" required></textarea>
+            <br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <br><br>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="">Select State</option>
+                <option>Uttar Pradesh</option>
+                <option>Delhi</option>
+                <option>Haryana</option>
+                <option>Rajasthan</option>
+                <option>Uttarakhand</option>
+                <option>Other</option>
+            </select>
+            <br><br>
+
+            <label for="pin">PIN Code:</label>
+            <input type="text" id="pin" name="pin"
+                   pattern="[0-9]{6}" maxlength="6" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Choose a course</option>
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Sc</option>
+                <option>MCA</option>
+                <option>MBA</option>
+            </select>
+            <br><br>
+
+            <label for="branch">Select Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">Choose a branch</option>
+                <option>Information Technology</option>
+                <option>Computer Science</option>
+                <option>AI and Machine Learning</option>
+                <option>Data Science</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Other</option>
+            </select>
+            <br><br>
+
+            <label for="year">Admission Year:</label>
+            <select id="year" name="year" required>
+                <option value="">Select Year</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+            </select>
+            <br><br>
+
+            <label for="qualification">Previous Qualification:</label>
+            <select id="qualification" name="qualification" required>
+                <option value="">Select Qualification</option>
+                <option>Class 10</option>
+                <option>Class 12</option>
+                <option>Diploma</option>
+                <option>Graduation</option>
+            </select>
+            <br><br>
+
+            <label for="marks">Previous Exam Percentage:</label>
+            <input type="number" id="marks" name="marks"
+                   min="0" max="100" step="0.01" required>
+            <br><br>
+
+            <label for="roll">Previous Roll Number:</label>
+            <input type="text" id="roll" name="roll">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option>General</option>
+                <option>OBC</option>
+                <option>SC</option>
+                <option>ST</option>
+                <option>EWS</option>
+                <option>Other</option>
+            </select>
+            <br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies"
+                   placeholder="Reading, sports, etc.">
+            <br><br>
+
+            <input type="checkbox" id="declaration"
+                   name="declaration" value="accepted" required>
+            <label for="declaration">
+                I confirm that the information provided is correct.
+            </label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
+```
